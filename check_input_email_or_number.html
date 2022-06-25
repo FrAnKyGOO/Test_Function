@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+
+
+<body>
+    <input type="text" id="txt_input" onkeydown="checkInput();" onkeyup="checkInput();" />
+
+    <script>
+        // function checkInput(){
+        //     let txtinput = $("#txt_input").val();
+        //     if(txtinput.match(/^[a-z][a-z0-9]*$/i)){
+        //         console.log("ok")
+        //     }else{
+        //         console.log("no");
+        //     }
+        // }
+        function checkInput() {
+            let txtinput = $("#txt_input").val();
+
+            let validateEmail = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+            let validatePhone = /((\+66|02|03|04|05|06|07|08|09)(\d{1,2}\-?\d{3}\-?\d{3,4}))/gm;
+
+            console.log("-------------");
+            console.log(txtinput);
+            console.log(txtinput.length);
+
+            if (txtinput.match(/^[0-9]+$/) && txtinput.length == 10) { //type number, == 10 , Not @
+                if(txtinput.match(validatePhone)){
+                    console.log("ok phone number");
+                    return true;
+                }else{
+                    console.log("รูปแบบเบอร์โทรศัพท์ไม่ถูกต้อง");
+                    return false;
+                }
+            } else if (txtinput.match(/^[0-9A-Za-z@.][A-Za-z0-9@.]*$/)) { // Email
+                if(txtinput.match(validateEmail)){
+                    console.log("ok email.com");
+                return true
+                }else{
+                    console.log("รูปแบบอีเมล์ไม่ถูกต้อง");
+                } 
+            }else{ // not phone number and Email
+                console.log("กรุณากรอกเบอร์โทรศัพท์หรืออีเมล");
+                return false
+            }
+        }
+
+        // function checkInput() {
+        //     if ($("#login_checklogin").val().match(/^[0-9]+$/) && $("#login_checklogin").val().length == 10) {
+        //         if ($("#login_checklogin").val().match(/((\+66|02|03|04|05|06|07|08|09)(\d{1,2}\-?\d{3}\-?\d{3,4}))/gm)) {
+        //             $("span[name='txt_false']").css('display', 'none');
+        //             $("span[name='txt_false']").text("");
+
+        //             return true;
+        //         } else {
+        //             $("#login_checklogin").addClass("is-invalid");
+        //             $("span[name='txt_false']").css('display', 'initial');
+        //             $("span[name='txt_false']").text("รูปแบบเบอร์โทรศัพท์ไม่ถูกต้อง");
+
+        //             return false;
+        //         }
+        //     } else if ($("#login_checklogin").val().match(/^[A-Za-z@@.][A-Za-z0-9@@.]*$/)) {
+        //         if ($("#login_checklogin").val().match(/^([a-zA-Z0-9_.+-])+\@@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/)) {
+        //             $("span[name='txt_false']").css('display', 'none');
+        //             $("span[name='txt_false']").text("");
+
+        //             return true
+        //         } else {
+        //             $("#login_checklogin").addClass("is-invalid");
+        //             $("span[name='txt_false']").css('display', 'initial');
+        //             $("span[name='txt_false']").text("รูปแบบอีเมล์ไม่ถูกต้อง");
+
+        //             return false;
+        //         }
+        //     } else {
+        //         $("#login_checklogin").addClass("is-invalid");
+        //         $("span[name='txt_false']").css('display', 'initial');
+        //         $("span[name='txt_false']").text("กรุณากรอกเบอร์โทรศัพท์หรืออีเมล");
+
+        //         return false
+        //     }
+        // }
+    </script>
+</body>
+
+</html>

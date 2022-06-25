@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <script src="http://www.google.com/jsapi"></script>
+    <script language="javascript">
+        google.load('prototype', '1.6.0.2');
+    </script>
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+    <form name="appointment" method="post" onsubmit="return doValidate();">
+        Name:*<br />
+        <input type="text" name="requiredname" />
+        Email:*<br />
+        <input type="text" name="requiredemail" />
+        Phone:*<br />
+        <input type="text" name="requiredphone" />
+        Appointment Date:*<br />
+        <input type="text" name="requireddate" />
+
+        Appointment Time:*<br />
+        <input type="text" name="requiredtime" /><br /><br />
+        <input name="submit" type="submit" value="Book Now" />
+    </form>
+
+
+    <script>
+
+        $(document).ready(function () {
+            function doValidate() {
+                if (document.appointment.requiredname.value == "") {
+                    alert("Please put your name");
+                    document.appointment.requiredname.focus();
+                    return false;
+                }
+                var readmail = document.appointment.requiredemail;
+                var checkatsymbol = readmail.indexof("@");
+                var checkdotsymbol = readmail.lastindexof(".");
+                if (readmail.value == "" || checkatsymbol < 1) {
+                    alert("Please put the correct email address");
+                    document.appointment.requiredemail.focus();
+                    return false;
+                }
+                if (document.appointment.requiredphone.value == "") {
+                    alert("Please put your phone");
+                    document.appointment.requiredphone.focus();
+                    return false;
+                }
+                if (document.appointment.requireddate.value == "") {
+                    alert("Please put your appointment date as DD/MM/YYYY");
+                    document.appointment.requireddate.focus();
+                    return false;
+                }
+                if (document.appointment.requiredtime.value == "") {
+                    alert("Please put your appointment time as HH:MM AM/PM");
+                    document.appointment.requiredtime.focus();
+                    return false;
+                }
+                return (true);
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

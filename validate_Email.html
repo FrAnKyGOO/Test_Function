@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9487/jquery.validate.min.js"></script>
+    <style>
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        html {
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        body {
+            padding: 2rem;
+        }
+
+        input {
+            font-size: 3rem;
+            width: 100%;
+        }
+    </style>
+
+    <form id="yourDetails">
+        <div class="js-row">
+            <input id="email" type="email" maxlength="30" placeholder="Email" value="" name="email" />
+        </div>
+    </form>
+
+    
+    <script>
+        var rowSelector = '.js-row';
+
+        $('#yourDetails').validate({
+            debug: true,
+            onfocusout: function (element) {
+                var $element = $(element);
+                $element.valid();
+            },
+            onkeyup: function (element) {
+                var $row = $(element).closest(rowSelector);
+                if ($row.hasClass('is-row-error')) {
+                    $(element).valid();
+                }
+            },
+            highlight: function (element, errorClass, validClass) {
+                var $row = $(element).closest(rowSelector);
+                $row.addClass('is-row-error');
+                $row.removeClass('is-row-valid');
+            },
+            unhighlight: function (element, errorClass, validClass) {
+                var $row = $(element).closest(rowSelector);
+                $row.addClass('is-row-valid');
+                $row.removeClass('is-row-error');
+            }
+        });
+    </script>
+</body>
+
+</html>

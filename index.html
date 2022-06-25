@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            const array1 = [
+
+                {
+                    "x": "8/11/2009",
+                    "y": "10",
+                    "z": "a"
+                },
+                {
+                    "x": "8/12/2009",
+                    "y": "10",
+                    "z": "a"
+                },
+                {
+                    "x": "8/13/2009",
+                    "y": "20",
+                    "z": "b"
+                },
+                {
+                    "x": "8/14/2009",
+                    "y": "30",
+                    "z": "b"
+                }
+
+            ];
+            // const array1 = [1,2,3,4,5];
+            // var test = Math.max.apply(Math, array1.map(o => {if(o.z == "b"){return o.y;} } ) );
+
+            var test01 = array1.filter(x => { return x.z == "b" })
+            console.log(test01);
+            var test02 = Math.max.apply(Math, test01.map(xx => { return xx.y }))
+            console.log(test02);
+            
+            // console.log(array1.map(o => {if(o.z == "b"){return o.y;} } ));
+
+
+            // var test = "" ;
+            // test = calculat_Price("10","800");
+            // console.log(test);
+            // function calculat_Price(percentage, f_price) {
+            //     var calculated_price = "";
+            //     calculated_price = (parseInt(f_price) * parseInt(percentage)) / 100
+
+            //     if (calculated_price != 0) {
+            //         return calculated_price;
+            //     } else {
+            //         return 0;
+            //     }
+            // }
+        });
+
+        // function Pot() {
+        //      this.boilStatus = '';
+              
+        //      this.startBoiling = function () {
+        //            if (stoveTemp > 400) this.boilStatus = "boiling"; 
+        //         } 
+        //     }
+
+        //     return this.startBoiling 
+    </script>
+
+
+</body>
+
+</html>

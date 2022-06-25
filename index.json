@@ -1,0 +1,97 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "store_id": "2",
+            "store_name_th": "Health infinity Store",
+            "store_name_en": "Health infinity Store",
+            "store_img": "https://drin-dev.s3.ap-southeast-1.amazonaws.com/store_img/default_store_img.png?X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA6DIQHDYM7LBXBNE6/20220613/ap-southeast-1/s3/aws4_request&X-Amz-Date=20220613T064654Z&X-Amz-SignedHeaders=host&X-Amz-Signature=b017aa279ce5d585bcca69692787a58751e9d0f542187b11dc2e93ef4039fb22",
+            "pickup_by_yourself": "Y",
+            "product_name_th": "ชุดตรวจCOVID GIGA TESTSEALABS 2IN1(20ชุด/กล่อง)",
+            "product_name_en": "COVID GIGA TESTSEALABS 2IN1",
+            "product_desc_th": "ชุดตรวจ Antigen ต่อเชื้อ SARS-CoV-2 จากตัวอย่างน้ำลาย\nหรือสารคัดหลั่งจากโพรงจมูก\n",
+            "product_desc_en": "ชุดตรวจ Antigen ต่อเชื้อ SARS-CoV-2 จากตัวอย่างน้ำลาย\nหรือสารคัดหลั่งจากโพรงจมูก",
+            "product_type_id": "ATK",
+            "product_type_name_th": "Antigen Test KIT",
+            "product_type_name_en": "Antigen Test KIT",
+            "product_more": "N",
+            "product_main_img": "https://drin-dev.s3.ap-southeast-1.amazonaws.com/product_img/ATK42204110001.jpeg?X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA6DIQHDYM7LBXBNE6/20220613/ap-southeast-1/s3/aws4_request&X-Amz-Date=20220613T064654Z&X-Amz-SignedHeaders=host&X-Amz-Signature=9dca8fd88988ac8faf27b121c47d8fd49f0c23ac16266bce3628cac5ae636582",
+            "active": "Y",
+            "isnew": "N",
+            "warranty": "Y",
+            "warranty_quantity": "2",
+            "warranty_quantity_type": "M",
+            "created_timestamp": "2022-04-11 10:40:48",
+            "updated_timestamp": "2022-04-11 10:40:48",
+            "count_productincart": "0",
+            "all_product_sub": [
+                {
+                    "product_sub_id": "ATK42204110001-1",
+                    "sku": "ATK42204110001-1",
+                    "product_sub_desc_th": "ไม่ระบุ (ไม่ระบุ)",
+                    "product_sub_desc_en": "Not specified (Not specified)",
+                    "full_price": "800.00",
+                    "sale_price": "800.00",
+                    "remaining": "34",
+                    "qty": "50",
+                    "active": "Y",
+                    "product_option_id": "NONE",
+                    "product_option_name_th": "ไม่ระบุ",
+                    "product_option_name_en": "Not specified",
+                    "product_color_id": "NONE",
+                    "product_color_name_th": "ไม่ระบุ",
+                    "product_color_name_en": "Not specified",
+                    "product_color_code": "NONE",
+                    "is_cost_range_volumn": "N",
+                    "all_img": [
+                        {
+                            "seq": "1",
+                            "product_img": "https://drin-dev.s3.ap-southeast-1.amazonaws.com/product_img/ATK42204110001-1_1.jpeg?X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA6DIQHDYM7LBXBNE6/20220613/ap-southeast-1/s3/aws4_request&X-Amz-Date=20220613T064654Z&X-Amz-SignedHeaders=host&X-Amz-Signature=950cea7d33547fd98a80961aaf43190f6e36deb9cc1e34141f59563b6e0a533b"
+                        },
+                        {
+                            "seq": "2",
+                            "product_img": "https://drin-dev.s3.ap-southeast-1.amazonaws.com/product_img/ATK42204110001-1_2.jpeg?X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA6DIQHDYM7LBXBNE6/20220613/ap-southeast-1/s3/aws4_request&X-Amz-Date=20220613T064655Z&X-Amz-SignedHeaders=host&X-Amz-Signature=7bc2e9fc09c1884bf34e021223c4cee2fc1f90c63b9c00248914cd6ba950178e"
+                        },
+                        {
+                            "seq": "3",
+                            "product_img": "https://drin-dev.s3.ap-southeast-1.amazonaws.com/product_img/ATK42204110001-1_3.jpeg?X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA6DIQHDYM7LBXBNE6/20220613/ap-southeast-1/s3/aws4_request&X-Amz-Date=20220613T064655Z&X-Amz-SignedHeaders=host&X-Amz-Signature=e547b1d53b16c1a28d2aa78482a1b1d7770991e8df05a1a6e34de03a1b367d7f"
+                        }
+                    ],
+                    "pricerange": null
+                }
+            ],
+            "all_promocode": [
+                {
+                    "promotion_id": "ATKSALE",
+                    "promotion_name_th": "ลดพิเศษ",
+                    "promotion_name_en": "ลดพิเศษ",
+                    "promotion_condition_desc_th": "ซื้อครบ 1000 baht ลดทันที 50 baht",
+                    "promotion_condition_desc_en": " "
+                },
+                {
+                    "promotion_id": "ATKSALE2",
+                    "promotion_name_th": "ลดพิเศษ2",
+                    "promotion_name_en": "ลดพิเศษ2",
+                    "promotion_condition_desc_th": "ซื้อครบ 1500 baht ลดทันที 10 percent",
+                    "promotion_condition_desc_en": " "
+                }
+            ],
+            "all_option": [
+                {
+                    "product_option_id": "NONE",
+                    "product_option_name_th": "ไม่ระบุ",
+                    "product_option_name_en": "Not specified",
+                    "color": [
+                        {
+                            "product_color_id": "NONE",
+                            "product_color_name_th": "ไม่ระบุ",
+                            "product_color_name_en": "Not specified",
+                            "product_color_code": "NONE"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "msg": ""
+}
